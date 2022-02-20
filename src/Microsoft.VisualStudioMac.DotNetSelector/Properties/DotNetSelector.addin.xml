@@ -2,4 +2,23 @@
 	<Runtime>
 		<Import assembly="Microsoft.VisualStudioMac.DotNetSelector.dll" />
 	</Runtime>
+
+	<Extension path="/MonoDevelop/Ide/Commands">
+		<Category _name=".NET Selector" id="DotNetSelector">
+			<Command id="Microsoft.VisualStudioMac.DotNetSelector.Commands.SelectActiveDotNet"
+				type="radio|array"
+				defaultHandler="Microsoft.VisualStudioMac.DotNetSelector.SelectActiveDotNetHandler"
+				_label="Active .NET" />
+		</Category>
+	</Extension>
+
+	<Extension path="/MonoDevelop/Ide/MainMenu/Project">
+		<ItemSet id="SelectActiveDotNet"
+			_label="Active .NET"
+			insertafter="RuntimeSeparator"
+			insertbefore="OptionsSeparator"
+			autohide="true">
+			<CommandItem id="Microsoft.VisualStudioMac.DotNetSelector.Commands.SelectActiveDotNet" />
+		</ItemSet>
+	</Extension>
 </ExtensionModel>

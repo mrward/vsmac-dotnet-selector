@@ -16,5 +16,9 @@
       <Private>False</Private>
       <HintPath>$(MDBinDir)\MonoDevelop.Ide.dll</HintPath>
     </Reference>
+    <Reference Include="MonoDevelop.DotNetCore">
+      <Private>False</Private>
+      <HintPath>$(MDBinDir)\AddIns\MonoDevelop.DotNetCore\MonoDevelop.DotNetCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
