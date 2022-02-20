@@ -1,0 +1,5 @@
+﻿<ExtensionModel>
+	<Runtime>
+		<Import assembly="Microsoft.VisualStudioMac.DotNetSelector.dll" />
+	</Runtime>
+</ExtensionModel>
