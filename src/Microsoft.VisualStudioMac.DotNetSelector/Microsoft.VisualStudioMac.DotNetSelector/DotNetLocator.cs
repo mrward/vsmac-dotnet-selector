@@ -98,6 +98,7 @@ namespace Microsoft.VisualStudioMac.DotNetSelector
                 foreach (FilePath directory in Directory.EnumerateDirectories(parentDirectory, "*dotnet*"))
                 {
                     FilePath dotNetFileName = directory.Combine("dotnet");
+                    FilePath dotNetX64FileName = directory.Combine("x64", "dotnet");
                     if (dotNetFileName == DotNetCoreRuntime.FileName ||
                         dotNetFileName == DefaultDotNetFileName)
                     {
@@ -105,7 +106,7 @@ namespace Microsoft.VisualStudioMac.DotNetSelector
                         continue;
                     }
 
-                    if (SafeFileExists(dotNetFileName))
+                    if (SafeFileExists(dotNetFileName) || SafeFileExists(dotNetX64FileName))
                     {
                         var location = new DotNetLocation(directory);
                         foundLocations.Add(location);
