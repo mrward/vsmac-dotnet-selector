@@ -19,6 +19,7 @@ namespace MonoDevelop.DotNetCore.Extensions
             if (type == null)
             {
                 LoggingService.LogError("Could not find DotNetCorePath type");
+                return;
             }
 
             try
