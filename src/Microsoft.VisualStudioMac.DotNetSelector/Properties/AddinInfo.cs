@@ -29,13 +29,13 @@ using Mono.Addins;
 
 [assembly:Addin ("DotNetSelector",
                  Namespace = "Microsoft.VisualStudioMac",
-                 Version = "0.1",
+                 Version = "0.2",
                  Category = "IDE extensions")]
 
 [assembly:AddinName (".NET Selector")]
 [assembly:AddinDescription ("Switch between dotnet installations")]
 
-[assembly:AddinDependency ("::MonoDevelop.Core", "17.0")]
-[assembly:AddinDependency ("::MonoDevelop.Ide", "17.0")]
-[assembly:AddinDependency ("::MonoDevelop.DotNetCore", "17.0")]
+[assembly:AddinDependency ("::MonoDevelop.Core", "17.5")]
+[assembly:AddinDependency ("::MonoDevelop.Ide", "17.5")]
+[assembly:AddinDependency ("::MonoDevelop.DotNetCore", "17.5")]
 
